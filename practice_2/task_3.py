@@ -6,6 +6,8 @@ BMI = weight/height**2
 weight = input()
 height = input()
 
-
-#code here
-
+if (weight.isdigit() * height.isdigit() == 0) or (int(weight)*int(height)==0):
+    print("Incorrect inputs. Try again with numeric positive data")
+else:
+    BMI = int(weight) / int(height)**2
+    print(BMI)
